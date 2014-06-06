@@ -239,7 +239,55 @@ angular.module('homepage', ['ngAnimate', 'ui.bootstrap', 'download-data'])
       }
     };
   })
+.directive('codenvy1', function(fetchCode, escape, script) {
+  return {
+    terminal: true,
+    link: function(scope, element, attr) {
+      element.html(
+          '<a href="http://ide3.cf.codenvy-stg.com/factory?v=1.2&author=Florent+Benoit&vcs=git&projectattributes.pname=angularjs-tutorial-basics&projectattributes.ptype=AngularJS&openfile=index.html&vcsurl=https%3A%2F%2Fgithub.com%2Fbenoitf%2Fangularjs-tutorial-basics&action=openproject&image=http%3A%2F%2Ffactories.codenvy.com%2Fimages%2Fangular.jpg" target="_blank" class="btn btn-primary">' +
+            '<i class="icon-white icon-pencil"></i> ' +
+            'Edit Me' +
+          '</a>');
+    }
+  }
+})
+.directive('codenvy2', function(fetchCode, escape, script) {
+  return {
+    terminal: true,
+    link: function(scope, element, attr) {
+      element.html(
+          '<a href="http://ide3.cf.codenvy-stg.com/factory?v=1.2&author=Florent+Benoit&vcs=git&projectattributes.pname=angularjs-tutorial-some-control&projectattributes.ptype=AngularJS&openfile=index.html&vcsurl=https%3A%2F%2Fgithub.com%2Fbenoitf%2Fangularjs-tutorial-some-control&action=openproject&image=http%3A%2F%2Ffactories.codenvy.com%2Fimages%2Fangular.jpg" target="_blank" class="btn btn-primary">' +
+            '<i class="icon-white icon-pencil"></i> ' +
+            'Edit Me' +
+          '</a>');
+    }
+  }
+})
 
+.directive('codenvy3', function(fetchCode, escape, script) {
+  return {
+    terminal: true,
+    link: function(scope, element, attr) {
+      element.html(
+          '<a href="http://ide3.cf.codenvy-stg.com/factory?v=1.2&author=Florent+Benoit&vcs=git&projectattributes.pname=angularjs-tutorial-backend&projectattributes.ptype=AngularJS&openfile=index.html&vcsurl=https%3A%2F%2Fgithub.com%2Fbenoitf%2Fangularjs-tutorial-backend&action=openproject&image=http%3A%2F%2Ffactories.codenvy.com%2Fimages%2Fangular.jpg" target="_blank" class="btn btn-primary">' +
+            '<i class="icon-white icon-pencil"></i> ' +
+            'Edit Me' +
+          '</a>');
+    }
+  }
+})
+.directive('codenvy4', function(fetchCode, escape, script) {
+  return {
+    terminal: true,
+    link: function(scope, element, attr) {
+      element.html(
+          '<a href="http://ide3.cf.codenvy-stg.com/factory?v=1.2&author=Florent+Benoit&vcs=git&projectattributes.pname=angularjs-tutorial-create-component&projectattributes.ptype=AngularJS&openfile=index.html&vcsurl=https%3A%2F%2Fgithub.com%2Fbenoitf%2Fangularjs-tutorial-create-component&action=openproject&image=http%3A%2F%2Ffactories.codenvy.com%2Fimages%2Fangular.jpg" target="_blank" class="btn btn-primary">' +
+            '<i class="icon-white icon-pencil"></i> ' +
+            'Edit Me' +
+          '</a>');
+    }
+  }
+})
   .directive('jsFiddle', function(fetchCode, escape, script) {
     return {
       terminal: true,
